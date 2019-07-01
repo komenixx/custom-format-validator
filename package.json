@@ -1,6 +1,6 @@
 {
   "name": "custom-format-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tool for validating custom format",
   "main": "index.js",
   "scripts": {
