@@ -6,9 +6,15 @@
   "scripts": {
     "build": "tsc ./index.ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^2.7.0",
     "typescript": "^3.5.2"
   }
 }

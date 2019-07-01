@@ -39,6 +39,9 @@ function validateByFormat(format, value, useACharAsUniversalLetter) {
         else if (c === ' ') {
             regex.push('(\\s)');
         }
+        else if (c === '!') {
+            regex.push('([a-zA-Z0-9])');
+        }
         else {
             if (c === '0') {
                 regex.push('([0-9])');

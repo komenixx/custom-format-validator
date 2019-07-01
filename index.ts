@@ -34,6 +34,8 @@ function validateByFormat(format: string, value: string, useACharAsUniversalLett
             regex.push('(.)');
         } else if (c === ' ') {
             regex.push('(\\s)');
+        } else if (c === '!') {
+            regex.push('([a-zA-Z0-9])');
         } else {
             if (c === '0') { regex.push('([0-9])'); }
             if (c === '1') { regex.push('([1-9])'); }
